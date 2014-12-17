@@ -16,6 +16,8 @@
 
 package com.makeramen;
 
+import com.makeramen.roundedimageview.R;
+
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;

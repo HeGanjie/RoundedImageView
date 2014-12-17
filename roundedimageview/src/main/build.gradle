@@ -1,0 +1,31 @@
+buildscript {
+  repositories {
+     mavenCentral()
+  }
+
+  dependencies {
+     classpath 'com.android.tools.build:gradle:+'
+  }
+}
+
+apply plugin: 'android-library'
+
+dependencies {
+	compile files('libs/picasso-2.4.0.jar')
+}
+
+android {
+    compileSdkVersion 20
+	buildToolsVersion "21.1.1"
+    
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['java']
+            jniLibs.srcDirs = ['libs']
+            aidl.srcDirs = ['java']
+            renderscript.srcDirs = ['java']
+            res.srcDirs = ['res']
+        }
+    }
+}
